@@ -204,6 +204,4 @@ error:
 
 void wifi_cleanup(wifi_handle wh, wifi_cleaned_up_handler wch) {
     if (fln && fln->wifi_cleanup) fln->wifi_cleanup(wh, wch);
-    free(fln);
-    dlclose(lib_handle);
 }
